@@ -1,21 +1,15 @@
 #!/bin/bash
 
-# Check if at least two parameters are provided
-if test $# -lt 2; then
-    echo "At least 2 parameters are required."
-    exit 1
-fi
-
 # Ask user for n
 read -p "Enter the value of n: " n
 
-# If n == 2, print only the second parameter and exit
-if test "$n" -eq 2; then
+# If both n and number of arguments equal to 2, print only the second parameter and exit
+if test "$n" -eq 2 && test "$#" -eq 2; then
     echo "The second parameter is '$2'."
     exit 0
 fi
 
-# If n > 2, check if the n-th parameter exists
+# If n != number of arguments, check if the n-th parameter exists
 if test "$#" -ge "$n"; then
     echo "The ${n}-th parameter is '${!n}'."
 else
