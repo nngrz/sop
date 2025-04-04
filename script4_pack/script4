@@ -1,0 +1,6 @@
+#!/bin/bash
+
+file1="$1"
+file2="$2"
+
+{ cat "$file1"; echo; cat "$file2"; } | sort -f
