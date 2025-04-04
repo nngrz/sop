@@ -1,0 +1,5 @@
+#!/bin/bash
+
+count=$(printenv | wc -l | xargs)
+
+echo "There are $count environment variables defined in the system."
