@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for file in *; do
+    if [ -f "$file" ]; then
+        if grep -qi "$file" "$file"; then
+            echo "File '$file' include its name in the content."
+        fi
+    fi
+done
