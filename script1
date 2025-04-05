@@ -21,7 +21,7 @@
 
 
 # Check if at least 2 parameters were provided
-if [ "$#" -lt 2 ]; then
+if test "$#" -lt 2; then
     echo "Error: The 2-nd parameter does not exist. At least 2 parameters are required."
     exit 1
 fi
