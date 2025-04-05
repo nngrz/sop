@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script checks if the second and n-th parameter exist
+
 # Example Usage:
 
 # When n = 2:
