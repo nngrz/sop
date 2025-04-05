@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Count the number of environment variables
 count=$(printenv | wc -l | xargs)
 
 echo "There are $count environment variables defined in the system."
