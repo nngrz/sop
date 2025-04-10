@@ -2,9 +2,6 @@
 
 # This Script copies all files ending with ~ to a BACKUP directory (creates it if needed).
 # Example Usage: $ ./suffix.sh 
-# Example Output: 
-# Created directory BACKUP.
-# Copied 1 file(s) with suffix ~ to BACKUP directory.
 
 BACKUP_DIR="BACKUP"
 
