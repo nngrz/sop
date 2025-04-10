@@ -2,6 +2,16 @@
 
 # This script converts a number (0–99) to its word representation
 
+# Example Usage:
+# ./numToWord.sh 25  # Output: twenty-five
+# ./numToWord.sh 7   # Output: seven
+# ./numToWord.sh 13  # Output: thirteen
+# ./numToWord.sh 90  # Output: ninety
+# ./numToWord.sh -5  # Output: Usage: ./numToWord.sh <number from 0 to 99>
+# ./numToWord.sh 100 # Output: Usage: ./numToWord.sh <number from 0 to 99>
+# ./numToWord.sh abc # Output: Usage: ./numToWord.sh <number from 0 to 99>
+# ./numToWord.sh     # Output: Usage: ./numToWord.sh <number from 0 to 99>
+
 # Function to convert 0 - 9
 digit_to_word() {
     local digit=$1
