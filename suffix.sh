@@ -1,6 +1,10 @@
 #!/bin/bash
 
 # This Script copies all files ending with ~ to a BACKUP directory (creates it if needed).
+# Example Usage: $ ./suffix.sh 
+# Example Output: 
+# Created directory BACKUP.
+# Copied 1 file(s) with suffix ~ to BACKUP directory.
 
 BACKUP_DIR="BACKUP"
 
@@ -16,10 +20,10 @@ else
     mkdir "$BACKUP_DIR"
     # Checks the exit status of the mkdir command. If it's not 0 meaning an error occurred.
     if [ $? -ne 0 ]; then
-        echo "Error: Failed to create directory '$BACKUP_DIR'."
+        echo "Error: Failed to create directory $BACKUP_DIR."
         exit 1
     fi
-    echo "Created directory '$BACKUP_DIR'."
+    echo "Created directory $BACKUP_DIR."
 fi
 
 # Find and copy files with the ~ suffix in the current directory
