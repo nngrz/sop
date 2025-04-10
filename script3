@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# Count the number of environment variables
-# Use `xargs` here to trim leading/trailing whitespace from the output of `wc -l`
-count=$(printenv | wc -l | xargs)
-
-echo "There are $count environment variables defined in the system."
