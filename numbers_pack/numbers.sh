@@ -2,6 +2,13 @@
 
 # This script finds the min, max, and sum of numbers in the given file
 
+# Example Usage: 
+# Create a file named 'number_example.txt' with numbers on each line:
+# 10
+# -5 
+# 20
+# In bash command: $ ./numbers.sh number_example.txt
+
 # Check if a filename is provided
 if [ -z "$1" ]; then
     echo "Usage: $0 <filename>"
