@@ -1,6 +1,10 @@
 #!/bin/bash
 
 # This script calculates the n-th Fibonacci number - with recursion
+# Example Usage:
+# $ ./fibonacciRecursion.sh 3
+# Example output: Fibonacci(3) = 2
+
 
 # Check if user provided an argument
 if [ -z "$1" ] || ! [[ "$1" =~ ^[0-9]+$ ]]; then
