@@ -21,6 +21,7 @@ int main() {
         }
     }
 
+    // Ensures the parent process waits for all child processes to terminate.
     while (wait(NULL) > 0);
 
     return 0;
