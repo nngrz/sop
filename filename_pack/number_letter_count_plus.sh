@@ -13,7 +13,7 @@ if [ ! -f "$file" ]; then
 fi
 
 number_count=0
-letter_count=0
+letter_count=0 
 sum=0
 
 while read -r line; do
